@@ -59,7 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 6000);
 });
 
+let hasRun = true,
+  hasRun2 = true,
+  hasRun3 = true;
+
 document.addEventListener("scroll", () => {
+  if (hasRun) hasRun = false;
+  else return;
   let activeClientElement = document.querySelector(".years-experience");
   let cnt = 0;
   let clientCounterIntervalID = setInterval(() => {
@@ -73,6 +79,8 @@ document.addEventListener("scroll", () => {
 });
 
 document.addEventListener("scroll", () => {
+  if (hasRun2) hasRun2 = false;
+  else return;
   let activeClientElement = document.querySelector(".no-of-product");
   let cnt = 0;
   let clientCounterIntervalID = setInterval(() => {
@@ -86,6 +94,8 @@ document.addEventListener("scroll", () => {
 });
 
 document.addEventListener("scroll", () => {
+  if (hasRun3) hasRun3 = false;
+  else return;
   let activeClientElement = document.querySelector(".expert-farmers");
   let cnt = 0;
   let clientCounterIntervalID = setInterval(() => {
