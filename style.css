@@ -19,6 +19,7 @@ body {
   border-radius: 25px;
   margin: 15px;
   background-position: left center;
+  position: relative;
 }
 
 .brief-info {
@@ -160,6 +161,17 @@ body {
 .nav-links li.nav-link-active,
 .nav-links li:hover {
   color: #37a033;
+}
+
+.nav-button {
+  display: none;
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 .social-links {

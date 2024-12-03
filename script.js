@@ -107,3 +107,21 @@ document.addEventListener("scroll", () => {
     clearInterval(clientCounterIntervalID);
   }, 4950);
 });
+
+let toggleBtn = document.querySelector(".nav-button");
+let navContainer = document.querySelector(".responsive-nav-container");
+let navLinks = document.querySelector(".nav-links");
+
+function navToggle() {
+  if (toggleBtn.classList.contains("nav-closed")) {
+    toggleBtn.classList.remove("nav-closed");
+    toggleBtn.innerHTML = '<i class="fa-solid fa-x"></i>';
+    navContainer.style.display = "block";
+    navLinks.style.display = "flex";
+  } else {
+    toggleBtn.classList.add("nav-closed");
+    toggleBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    navContainer.style.display = "none";
+    navLinks.style.display = "none";
+  }
+}
