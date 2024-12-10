@@ -11,14 +11,20 @@ body {
   width: 100%;
 }
 
-.navbar {
+.flex {
   display: flex;
-  background-image: url("assets/farming_couple.webp");
-  background-repeat: no-repeat;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: url("assets/farming_couple.webp") no-repeat left center;
   background-size: cover;
   border-radius: 25px;
   margin: 15px;
-  background-position: left center;
   position: relative;
 }
 
@@ -26,8 +32,6 @@ body {
   height: 700px;
   width: 500px;
   background-color: rgba(240, 240, 240, 0.8);
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   color: #37a033;
   padding: 15px;
@@ -56,7 +60,6 @@ body {
 }
 
 .learn-more-buttons {
-  display: flex;
   width: 220px;
   transition: transform 0.5s ease;
 }
@@ -82,10 +85,6 @@ body {
   border-radius: 75%;
 }
 
-.active-clients .client-images {
-  display: flex;
-}
-
 .active-clients .client-images img,
 .active-clients .client-images div {
   height: 50px;
@@ -95,7 +94,6 @@ body {
 }
 
 .active-clients .client-images .circle-box {
-  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
@@ -130,13 +128,10 @@ body {
 
 .nav-right {
   width: 70%;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
 .nav-links {
-  display: flex;
   justify-content: flex-end;
   margin: 55px;
   width: 95%;
@@ -145,7 +140,6 @@ body {
 
 .nav-links ul {
   width: 50%;
-  display: flex;
   justify-content: space-around;
 }
 
@@ -175,20 +169,20 @@ body {
 }
 
 .social-links {
-  display: flex;
   justify-content: flex-end;
   transform: translate(-50px, -50px);
 }
 
 .social-links div {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   padding: 15px;
+  width: 50px;
+  height: 50px;
   margin: 0 0 0 15px;
   font-size: 16px;
-  border-radius: 25px;
+  border-radius: 50%;
   font-weight: bolder;
   color: #1c461a;
   box-shadow: 1px 1px 2px rgba(255, 240, 255, 0.3);
@@ -199,17 +193,14 @@ body {
   cursor: pointer;
 }
 
-.social-links div img {
-  height: 25px;
-  width: 25px;
+.social-links i {
+  font-size: 20px;
+  color: #37a033;
 }
 
 .about-us {
-  background-image: url("assets/bg_vegetable.webp");
-  background-repeat: no-repeat;
+  background: url("assets/bg_vegetable.webp") no-repeat right;
   background-size: cover;
-  background-position: right;
-  display: flex;
   justify-content: center;
   margin-top: 150px;
 }
@@ -266,7 +257,6 @@ body {
 }
 
 .about-us-boxes {
-  display: flex;
   gap: 15px;
 }
 
@@ -301,7 +291,7 @@ body {
   background-color: #1c461a;
   height: 100vh;
   width: 99%;
-  margin: 120px 10px;
+  margin: 112px 10px;
   border-radius: 25px;
   padding: 55px;
 }
@@ -312,12 +302,11 @@ body {
   font-weight: 900;
   font-family: Helvetica, sans-serif;
   text-align: center;
-  padding: 100px 50px;
+  padding: 50px;
 }
 
 .our-products .products {
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
@@ -364,7 +353,6 @@ body {
   height: 80vh;
   width: 100%;
   padding: 25px;
-  display: flex;
 }
 
 .our-certificates .our-certificates-left,
@@ -420,7 +408,6 @@ body {
 }
 
 .certified-by {
-  display: flex;
   align-items: center;
 }
 
@@ -461,10 +448,6 @@ body {
   background-image: url("assets/rohs.webp");
 }
 
-.active-slide-indicator {
-  display: flex;
-}
-
 .active-slide-indicator .slide-indicator {
   height: 10px;
   width: 10px;
@@ -482,7 +465,7 @@ footer {
   width: 100%;
   background-color: #1c461a;
   margin-top: 50px;
-  padding: 50px 250px;
+  padding: 50px 150px;
   color: #fff;
 }
 
@@ -499,13 +482,14 @@ footer .footer-logo {
 }
 
 footer .footer-logo img {
-  height: 125px;
-  width: 125px;
+  height: 75px;
+  width: 150px;
 }
 
 footer .footer-links ul {
   list-style-type: none;
 }
+
 footer .footer-links ul li {
   margin: 15px 0;
 }
@@ -534,22 +518,25 @@ footer h3 {
 }
 
 .material-icons {
-  color: yellow;
+  color: #ffc500;
 }
 
 footer .location-info,
 .email-info,
 .phone-no {
   width: 80%;
-  display: flex;
 }
 
 hr {
-  width: 80vw;
+  width: 100%;
   margin-bottom: 30px;
   opacity: 0.3;
 }
 
 .copy-right-text {
   text-align: center;
+}
+
+.footer-logo img {
+  filter: brightness(0) invert(1);
 }

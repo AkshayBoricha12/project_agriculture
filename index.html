@@ -1,87 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprayking LTD</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_query.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sprayking LTD</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="media_query.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="responsive-nav-container"></div>
-      <div class="nav-left">
-        <div class="brief-info">
-          <a href="#"><img loading="lazy" loading="lazy" loading="lazy" loading="lazy" src="assets/logo.webp"
-              alt="SPRAYKING Logo" id="logo-image" /></a>
-          <div class="brief-text">
-            <h1><span>Agricultural</span></h1>
-            <h1>Sprayer</h1>
-            <h1>Parts</h1>
-          </div>
-          <div class="learn-more-buttons">
-            <button class="learn-more-button">
-              <strong>Learn More</strong>
-            </button>
-            <button class="rounded-arrow-button">&rarr;</button>
-          </div>
-          <div class="active-clients">
-            <div class="client-images">
-              <img loading="lazy" loading="lazy" loading="lazy" loading="lazy" src="assets/man_smiling.webp"
-                id="man-smiling-image" alt="Man smilling" />
-              <img loading="lazy" loading="lazy" loading="lazy" loading="lazy" src="assets/woman_smiling.webp"
-                id="woman-smiling-image" alt="Woman smilling" />
-              <img loading="lazy" loading="lazy" loading="lazy" loading="lazy" src="assets/businessman.jpg"
-                id="businessman-image" alt="A businessman" />
-              <div class="circle-box"><span class="active-clients-counter">0</span>k+</div>
-              <p class="some-text">Active client with positive reviews</p>
+  <body>
+    <header>
+      <nav class="navbar flex">
+        <div class="responsive-nav-container"></div>
+        <div class="nav-left">
+          <div class="brief-info flex-column">
+            <a href="#"
+              ><img
+                loading="lazy"
+                src="assets/logo.webp"
+                alt="SPRAYKING Logo"
+                id="logo-image"
+            /></a>
+            <div class="brief-text">
+              <h1><span>Agricultural</span></h1>
+              <h1>Sprayer</h1>
+              <h1>Parts</h1>
+            </div>
+            <div class="learn-more-buttons flex">
+              <button class="learn-more-button">
+                <strong>Learn More</strong>
+              </button>
+              <button class="rounded-arrow-button">&rarr;</button>
+            </div>
+            <div class="active-clients">
+              <div class="client-images flex">
+                <img
+                  loading="lazy"
+                  src="assets/man_smiling.webp"
+                  id="man-smiling-image"
+                  alt="Man smilling"
+                />
+                <img
+                  loading="lazy"
+                  src="assets/woman_smiling.webp"
+                  id="woman-smiling-image"
+                  alt="Woman smilling"
+                />
+                <img
+                  loading="lazy"
+                  src="assets/businessman.jpg"
+                  id="businessman-image"
+                  alt="A businessman"
+                />
+                <div class="circle-box flex">
+                  <span class="active-clients-counter">0</span>k+
+                </div>
+                <p class="some-text">Active client with positive reviews</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="nav-right">
-        <ul class="nav-links">
-          <li class="nav-link-active">Home</li>
-          <li>About</li>
-          <li>Quality</li>
-          <li>Products</li>
-          <li>Investor Relations</li>
-          <li>Catalogue</li>
-          <li>Contact</li>
-          <li>Certificate</li>
-        </ul>
-        <button class="nav-button nav-closed" onclick="navToggle()"><i class="fa-solid fa-bars"></i></button>
-        <div class="social-links">
-          <div>
-            <img loading="lazy" loading="lazy" loading="lazy" loading="lazy" src="assets/facebook.png"
-              alt="Facebook logo">
-          </div>
-          <div>
-            <img loading="lazy" loading="lazy" loading="lazy" loading="lazy" src="assets/twitter.png"
-              alt="Twitter logo">
-          </div>
-          <div>
-            <img loading="lazy" loading="lazy" loading="lazy" loading="lazy" src="assets/youtube.png"
-              alt="Youtube logo">
-          </div>
-          <div>
-            <img loading="lazy" loading="lazy" loading="lazy" loading="lazy" src="assets/instagram.png"
-              alt="Instagram logo">
+        <div class="nav-right flex-column">
+          <ul class="nav-links flex">
+            <li class="nav-link-active">Home</li>
+            <li>About</li>
+            <li>Quality</li>
+            <li>Products</li>
+            <li>Investor Relations</li>
+            <li>Catalogue</li>
+            <li>Contact</li>
+            <li>Certificate</li>
+          </ul>
+          <button class="nav-button nav-closed" onclick="navToggle()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="social-links flex">
+            <div class="flex">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="flex">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="flex">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="flex">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <main class="hero">
-    <section class="about-us">
-      <div class="about-us-content">
-        <div class="about-us-div">About Us</div>
-        <h1>SPRAYKING LIMITED</h1>
-        <pre>
+      </nav>
+    </header>
+    <main class="hero">
+      <section class="about-us flex">
+        <div class="about-us-content">
+          <div class="about-us-div">About Us</div>
+          <h1>SPRAYKING LIMITED</h1>
+          <pre>
           <p>
 SPRAYKING LIMITED is an emerging leader in BRASS PARTS manufacturing,
 including Brass Fittings, Brass Forging Equipment, Brass Transformer
@@ -93,210 +112,258 @@ Founded in early 1980, it has already carved a niche for
 itself in Brass Part Manufacturing. With Green, Safe & Modern
 Infrastructure, it provides one of the besat workplace to its
 employees.</p></pre>
-        <a href="#">About Us &rarr;</a>
-        <div class="about-us-boxes">
-          <div class="about-us-box">
-            <p class="bold-numeric-data"><span class="years-experience">25</span><span class="plus-sign">+</span></p>
-            <p>Years experience</p>
-          </div>
-          <div class="about-us-box">
-            <p class="bold-numeric-data"><span class="no-of-product">60</span>K<span class="plus-sign">+</span></p>
-            <p>Agriculture Product</p>
-          </div>
-          <div class="about-us-box">
-            <p class="bold-numeric-data"><span class="expert-farmers">98</span><span class="plus-sign">+</span></p>
-            <p>Expert Farmers</p>
-          </div>
-        </div>
-      </div>
-      <div class="about-us-image">
-        <img loading="lazy" loading="lazy" loading="lazy" src="assets/about_img.webp" alt="About Us Image">
-      </div>
-    </section>
-    <section class="our-products">
-      <h1>OUR PRODUCTS</h1>
-      <div class="products">
-        <div class="product">
-          <img loading="lazy" loading="lazy" loading="lazy" src="assets/turning_components.webp"
-            alt="Turning components">
-          <p class="product-title">TURNING COMPONENTS</p>
-        </div>
-        <div class="product">
-          <img loading="lazy" loading="lazy" loading="lazy" src="assets/brass_compression_fittings.webp"
-            alt="Brass compression">
-          <p class="product-title">BRASS COMPRESSION</p>
-        </div>
-        <div class="product">
-          <img loading="lazy" loading="lazy" loading="lazy" src="assets/sanitary_fittings.webp" alt="Sanitary fittings">
-          <p class="product-title">SANITARY FITTINGS</p>
-        </div>
-        <div class="product">
-          <img loading="lazy" loading="lazy" loading="lazy" src="assets/brass_plumbing_fitting.webp"
-            alt="Brass pipe fittings">
-          <p class="product-title">BRASS PIPE FITTINGS</p>
-        </div>
-        <div class="product">
-          <img loading="lazy" loading="lazy" loading="lazy" src="assets/cnc.webp" alt="Brass CNC fittings">
-          <p class="product-title">BRASS CNC FITTINGS</p>
-        </div>
-        <div class="product">
-          <img loading="lazy" loading="lazy" loading="lazy" src="assets/extruded_bars_rods.webp"
-            alt="Extruded brass rods">
-          <p class="product-title">EXTRUDED BRASS RODS</p>
-        </div>
-      </div>
-    </section>
-    <section class="our-certificates">
-      <div class="our-certificates-left">
-        <div class="certificate-div">We are certified</div>
-        <h1 class="certificate-title">Our <span>Certificate</span></h1>
-      </div>
-      <div class="our-certificates-right">
-        <div class="slider">
-          <div class="slide slide-active">
-            <div class="ratings">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
+          <a href="#">About Us &rarr;</a>
+          <div class="about-us-boxes flex">
+            <div class="about-us-box">
+              <p class="bold-numeric-data">
+                <span class="years-experience">25</span
+                ><span class="plus-sign">+</span>
+              </p>
+              <p>Years experience</p>
             </div>
-            <div class="certified-by">
-              <div class="certified-by-logo make-in-india-logo"></div>
-              <div class="certified-by-title">
-                Make In India
+            <div class="about-us-box">
+              <p class="bold-numeric-data">
+                <span class="no-of-product">60</span>K<span class="plus-sign"
+                  >+</span
+                >
+              </p>
+              <p>Agriculture Product</p>
+            </div>
+            <div class="about-us-box">
+              <p class="bold-numeric-data">
+                <span class="expert-farmers">98</span
+                ><span class="plus-sign">+</span>
+              </p>
+              <p>Expert Farmers</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-us-image">
+          <img
+            loading="lazy"
+            src="assets/about_img.webp"
+            alt="About Us Image"
+          />
+        </div>
+      </section>
+      <section class="our-products">
+        <h1>OUR PRODUCTS</h1>
+        <div class="products flex">
+          <div class="product">
+            <img
+              loading="lazy"
+              src="assets/turning_components.webp"
+              alt="Turning components"
+            />
+            <p class="product-title">TURNING COMPONENTS</p>
+          </div>
+          <div class="product">
+            <img
+              loading="lazy"
+              src="assets/brass_compression_fittings.webp"
+              alt="Brass compression"
+            />
+            <p class="product-title">BRASS COMPRESSION</p>
+          </div>
+          <div class="product">
+            <img
+              loading="lazy"
+              src="assets/sanitary_fittings.webp"
+              alt="Sanitary fittings"
+            />
+            <p class="product-title">SANITARY FITTINGS</p>
+          </div>
+          <div class="product">
+            <img
+              loading="lazy"
+              src="assets/brass_plumbing_fitting.webp"
+              alt="Brass pipe fittings"
+            />
+            <p class="product-title">BRASS PIPE FITTINGS</p>
+          </div>
+          <div class="product">
+            <img
+              loading="lazy"
+              src="assets/cnc.webp"
+              alt="Brass CNC fittings"
+            />
+            <p class="product-title">BRASS CNC FITTINGS</p>
+          </div>
+          <div class="product">
+            <img
+              loading="lazy"
+              src="assets/extruded_bars_rods.webp"
+              alt="Extruded brass rods"
+            />
+            <p class="product-title">EXTRUDED BRASS RODS</p>
+          </div>
+        </div>
+      </section>
+      <section class="our-certificates flex">
+        <div class="our-certificates-left">
+          <div class="certificate-div">We are certified</div>
+          <h1 class="certificate-title">Our <span>Certificate</span></h1>
+        </div>
+        <div class="our-certificates-right">
+          <div class="slider">
+            <div class="slide slide-active">
+              <div class="ratings">
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+              </div>
+              <div class="certified-by flex">
+                <div class="certified-by-logo make-in-india-logo"></div>
+                <div class="certified-by-title">Make In India</div>
+              </div>
+              <div class="certificate-description">
+                Make in India is a major new national programme of the
+                Government of India designed to facilitate investment, foster
+                innovation, enhance skill development, protect intellectual
+                property and build best in class manufacturing infrastructure in
+                the country. We support Honourable Prime Minister Narendra
+                Modi’s launch of the Make in India initiative with the primary
+                goal of encouraging multinational and domestic companies to
+                manufacture their products in India
               </div>
             </div>
-            <div class="certificate-description">
-              Make in India is a major new national programme of the Government of India designed to facilitate
-              investment, foster innovation, enhance skill development, protect intellectual property and build best in
-              class manufacturing infrastructure in the country. We support Honourable Prime Minister Narendra Modi’s
-              launch of the Make in India initiative with the primary goal of encouraging multinational and domestic
-              companies to manufacture their products in India
-            </div>
-          </div>
-          <div class="slide">
-            <div class="ratings">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-            </div>
-            <div class="certified-by">
-              <div class="certified-by-logo tuv-nord-logo"></div>
-              <div class="certified-by-title">TUV NORD</div>
-            </div>
-            <div class="certificate-description">
-              Sprayking Limited obtained ISO 9001:2000 a quality certification confirmed by TUV NORD, a prestigious
-              certification company. In the year 2014 Company adopted the quality management system for better quality
-              production and work culture and obtained ISO 9001:2000 Certificate by TUV NORD, GERMANY
-            </div>
-          </div>
-          <div class="slide">
-            <div class="ratings">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-            </div>
-            <div class="certified-by">
-              <div class="certified-by-logo db-logo">
+            <div class="slide">
+              <div class="ratings">
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
               </div>
-              <div class="certified-by-title">D & B</div>
+              <div class="certified-by flex">
+                <div class="certified-by-logo tuv-nord-logo"></div>
+                <div class="certified-by-title">TUV NORD</div>
+              </div>
+              <div class="certificate-description">
+                Sprayking Limited obtained ISO 9001:2000 a quality certification
+                confirmed by TUV NORD, a prestigious certification company. In
+                the year 2014 Company adopted the quality management system for
+                better quality production and work culture and obtained ISO
+                9001:2000 Certificate by TUV NORD, GERMANY
+              </div>
             </div>
-            <div class="certificate-description">
-              Sprayking Limited is registered with D&B which a body who provides leads and sales intelligence data on
-              over 120 million companies like us. Their data undergoes extensive quality assurance testing with over
-              2,000 discrete checks for validity and reliability
+            <div class="slide">
+              <div class="ratings">
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+              </div>
+              <div class="certified-by flex">
+                <div class="certified-by-logo db-logo"></div>
+                <div class="certified-by-title">D & B</div>
+              </div>
+              <div class="certificate-description">
+                Sprayking Limited is registered with D&B which a body who
+                provides leads and sales intelligence data on over 120 million
+                companies like us. Their data undergoes extensive quality
+                assurance testing with over 2,000 discrete checks for validity
+                and reliability
+              </div>
+            </div>
+            <div class="slide">
+              <div class="ratings">
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+              </div>
+              <div class="certified-by flex">
+                <div class="certified-by-logo sabs-logo"></div>
+                <div class="certified-by-title">SABS</div>
+              </div>
+              <div class="certificate-description">
+                SABS is a leading global provider of standards, management
+                systems, business improvement and regulatory approval
+                information. Sprayking Limited is marinating standards for our
+                prestigious customers in African Countries
+              </div>
+            </div>
+            <div class="slide">
+              <div class="ratings">
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+                <img loading="lazy" src="assets/star.png" alt="Rating star" />
+              </div>
+              <div class="certified-by flex">
+                <div class="certified-by-logo rohs-logo"></div>
+                <div class="certified-by-title">ROHS</div>
+              </div>
+              <div class="certificate-description">
+                At Sprayking Limited we manufacture Lead Free brass products as
+                per European Union Directive. We make sure that we identify
+                everything and the limits are matched and the products meet the
+                standards
+              </div>
             </div>
           </div>
-          <div class="slide">
-            <div class="ratings">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-            </div>
-            <div class="certified-by">
-              <div class="certified-by-logo sabs-logo"></div>
-              <div class="certified-by-title">SABS</div>
-            </div>
-            <div class="certificate-description">
-              SABS is a leading global provider of standards, management systems, business improvement and regulatory
-              approval information. Sprayking Limited is marinating standards for our prestigious customers in African
-              Countries
-            </div>
+          <div class="active-slide-indicator flex">
+            <div class="current-slide-indicator slide-indicator"></div>
+            <div class="slide-indicator"></div>
+            <div class="slide-indicator"></div>
+            <div class="slide-indicator"></div>
+            <div class="slide-indicator"></div>
           </div>
-          <div class="slide">
-            <div class="ratings">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
-              <img loading="lazy" loading="lazy" loading="lazy" src="assets/star.png" alt="Rating star">
+        </div>
+      </section>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="#"
+              ><img loading="lazy" src="assets/logo.webp" alt="Sprayking Logo"
+            /></a>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Link</h3>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Quality</li>
+              <li>Products</li>
+              <li>Investor Relations</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="contact-us">
+            <h3>Contact Us</h3>
+            <div class="phone-no flex">
+              <i class="material-icons phone-icon">&#xe0cd;</i>
+              <p>+91-932-837-7772</p>
             </div>
-            <div class="certified-by">
-              <div class="certified-by-logo rohs-logo"></div>
-              <div class="certified-by-title">ROHS</div>
+            <div class="email-info flex">
+              <i class="material-icons">&#xe0be;</i>
+              <p>info@sprayking.co.in</p>
             </div>
-            <div class="certificate-description">
-              At Sprayking Limited we manufacture Lead Free brass products as per European Union Directive. We make sure
-              that we identify everything and the limits are matched and the products meet the standards
+            <div class="location-info flex">
+              <i class="material-icons">&#xe0c8;</i>
+              <p class="address">
+                Sprayking Ltd. Plot No. 4009-10, G.I.D.C. Phase -lll, Dared,
+                Jamnagar - 361004. Gujarat - India.
+              </p>
             </div>
           </div>
         </div>
-        <div class="active-slide-indicator">
-          <div class="current-slide-indicator slide-indicator"></div>
-          <div class="slide-indicator"></div>
-          <div class="slide-indicator"></div>
-          <div class="slide-indicator"></div>
-          <div class="slide-indicator"></div>
+        <hr />
+        <div class="copy-right-text">
+          <p>Copyright © 2024. All rights reserved.</p>
         </div>
-      </div>
-    </section>
-    <footer>
-      <div class=" footer-content">
-        <div class="footer-logo"><img loading="lazy" loading="lazy" loading="lazy" src="assets/logo.webp"
-            alt="Sprayking Logo"></div>
-        <div class="footer-links">
-          <h3>Quick Link</h3>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Quality</li>
-            <li>Products</li>
-            <li>Investor Relations</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-        <div class="contact-us">
-          <h3>Contact Us</h3>
-          <div class="phone-no">
-            <i class="material-icons phone-icon">&#xe0cd;</i>
-            <p>+91-932-837-7772</p>
-          </div>
-          <div class="email-info">
-            <i class="material-icons">&#xe0be;</i>
-            <p>info@sprayking.co.in</p>
-          </div>
-          <div class="location-info">
-            <i class="material-icons">&#xe0c8;</i>
-            <p class="address">Sprayking Ltd. Plot No. 4009-10, G.I.D.C. Phase -lll, Dared, Jamnagar - 361004. Gujarat -
-              India.</p>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="copy-right-text">
-        <p>Copyright © 2024. All rights reserved. </p>
-      </div>
-    </footer>
-  </main>
-  <script src="https://kit.fontawesome.com/c1f77fdc81.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-</body>
-
+      </footer>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/c1f77fdc81.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
